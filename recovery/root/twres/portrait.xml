@@ -3547,7 +3547,7 @@
 				<text>{@dm_verity_btn=Dm Verity}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmverity</action>
+					<action function="set">tw_filename=/sbin/rmverity_fec</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
