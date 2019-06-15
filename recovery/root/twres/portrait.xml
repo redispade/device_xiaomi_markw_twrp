@@ -2806,7 +2806,7 @@
 			</button>
 			<button style="main_button_ver">
                                 <condition var1="tw_edl_mode" var2="1"/>
-                                <placement x="%center_x%" y="%row13a_y%"/>
+                                <placement x="%indentx%" y="%row13a_y%"/>
                                 <text>{@rb_edl_btn=Edl}</text>
                                 <actions>
                                         <action function="set">tw_back=reboot</action>
