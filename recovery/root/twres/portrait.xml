@@ -235,7 +235,17 @@
 			<button style="main_button_ver">
 				<placement x="%indent%" y="%row16a_y%"/>
 				<text>{@file_manager_btn=File Manager}</text>
-				<action function="page">filemanagerlist</action>
+				<actions>
+                                        <action function="set">tw_filename=/sbin/aromafm</action>
+                                        <action function="set">tw_action=queuezip</action>
+                                        <action function="set">tw_has_action2=1</action>
+                                        <action function="set">tw_action2=flash</action>
+                                        <action function="set">tw_action2_param=tools_flash_zip</action>
+                                        <action function="set">tw_text1={@aromafm_text=Aroma File Manager will be launching.}</action>
+                                        <action function="set">tw_text4={@aromafm_confirm=Do you want to use Aroma Filemanager?}</action>
+                                        <action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+                                        <action function="page">tools_confirm_action</action>
+                                </actions>
 			</button>
 			
 			<button style="main_button_ver">
@@ -2785,11 +2795,31 @@
 					<action function="page">rebootcheck</action>
 				</actions>
 			</button>
-												<button style="main_button_ver">
+
+			<button style="main_button">
+				<condition var1="tw_download_mode" var2="1"/>
+				<placement x="%indent%" y="%row13a_y%"/>
+				<text>{@rb_download_btn=Download}</text>
+				<actions>
+					<action function="set">tw_back=reboot</action>
+					<action function="set">tw_action=reboot</action>
+					<action function="set">tw_action_param=download</action>
+					<action function="set">tw_reboot_param=download</action>
+					<action function="set">tw_has_action2=0</action>
+					<action function="set">tw_text1={@no_os1=No OS Installed! Are you}</action>
+					<action function="set">tw_text2={@no_osrb=sure you wish to reboot?}</action>
+					<action function="set">tw_action_text1={@rebooting=Rebooting...}</action>
+					<action function="set">tw_complete_text1={@rebooting=Rebooting...}</action>
+					<action function="set">tw_slider_text={@swipe_reboot=Swipe to Reboot}</action>
+					<action function="page">rebootcheck</action>
+				</actions>
+			</button>
+
+			<button style="main_button_ver">
 				<placement x="%indent%" y="%row14_y%"/>
 				<text>{@reload_theme_btn=Reload Theme}</text>
 				<action function="reload"/>
-				</button>
+			</button>
 
 			<action>
 				<touch key="home"/>
@@ -3408,7 +3438,7 @@
 
 			<button style="main_button_half_height_s">
 				<placement x="%indent%" y="%row8_y%"/>
-				<text>{@mic_fix_btn=Fix Mic}</text>
+				<text>{@mic_fix_btn=Reserved}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
 					<action function="set">tw_filename=/sbin/rmmic</action>
@@ -3425,7 +3455,7 @@
 			
 			<button style="main_button_half_height_s">
 				<placement x="%center_x%" y="%row8_y%"/>
-				<text>{@mtp_fix_btn=MTP Fix}</text>
+				<text>{@mtp_fix_btn=Reserved}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
 					<action function="set">tw_filename=/sbin/addmtp</action>
