@@ -2798,7 +2798,7 @@
 
 			<button style="main_button">
 				<condition var1="tw_download_mode" var2="1"/>
-				<placement x="%indent%" y="%row13a_y%"/>
+				<placement x="%indent%" y="%row12_y%"/>
 				<text>{@rb_download_btn=Download}</text>
 				<actions>
 					<action function="set">tw_back=reboot</action>
@@ -2814,6 +2814,24 @@
 					<action function="page">rebootcheck</action>
 				</actions>
 			</button>
+			<button style="main_button">
+                                <condition var1="tw_edl_mode" var2="1"/>
+                                <placement x="%center_x%" y="%row13_y%"/>
+                                <text>{@rb_edl_btn=Edl}</text>
+                                <actions>
+                                        <action function="set">tw_back=reboot</action>
+                                        <action function="set">tw_action=reboot</action>
+                                        <action function="set">tw_action_param=edl</action>
+                                        <action function="set">tw_reboot_param=edl</action>
+                                        <action function="set">tw_has_action2=0</action>
+                                        <action function="set">tw_text1={@no_os1=No OS Installed! Are you}</action>
+                                        <action function="set">tw_text2={@no_osrb=sure you wish to reboot?}</action>
+                                        <action function="set">tw_action_text1={@rebooting=Rebooting...}</action>
+                                        <action function="set">tw_complete_text1={@rebooting=Rebooting...}</action>
+                                        <action function="set">tw_slider_text={@swipe_reboot=Swipe to Reboot}</action>
+                                        <action function="page">rebootcheck</action>
+                                </actions>
+                        </button>
 
 			<button style="main_button_ver">
 				<placement x="%indent%" y="%row14_y%"/>
