@@ -235,17 +235,7 @@
 			<button style="main_button_ver">
 				<placement x="%indent%" y="%row16a_y%"/>
 				<text>{@file_manager_btn=File Manager}</text>
-				<actions>
-                                        <action function="set">tw_filename=/sbin/aromafm</action>
-                                        <action function="set">tw_action=queuezip</action>
-                                        <action function="set">tw_has_action2=1</action>
-                                        <action function="set">tw_action2=flash</action>
-                                        <action function="set">tw_action2_param=tools_flash_zip</action>
-                                        <action function="set">tw_text1={@aromafm_text=Aroma File Manager will be launching.}</action>
-                                        <action function="set">tw_text4={@aromafm_confirm=Do you want to use Aroma Filemanager?}</action>
-                                        <action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
-                                        <action function="page">tools_confirm_action</action>
-                                </actions>
+				<action function="page">filemanagerlist</action>
 			</button>
 			
 			<button style="main_button_ver">
@@ -2796,9 +2786,9 @@
 				</actions>
 			</button>
 
-			<button style="main_button">
+			<button style="main_button_ver">
 				<condition var1="tw_download_mode" var2="1"/>
-				<placement x="%indent%" y="%row12_y%"/>
+				<placement x="%indent%" y="%row11a_y%"/>
 				<text>{@rb_download_btn=Download}</text>
 				<actions>
 					<action function="set">tw_back=reboot</action>
@@ -2814,9 +2804,9 @@
 					<action function="page">rebootcheck</action>
 				</actions>
 			</button>
-			<button style="main_button">
+			<button style="main_button_ver">
                                 <condition var1="tw_edl_mode" var2="1"/>
-                                <placement x="%center_x%" y="%row13_y%"/>
+                                <placement x="%center_x%" y="%row13a_y%"/>
                                 <text>{@rb_edl_btn=Edl}</text>
                                 <actions>
                                         <action function="set">tw_back=reboot</action>
@@ -2834,7 +2824,7 @@
                         </button>
 
 			<button style="main_button_ver">
-				<placement x="%indent%" y="%row14_y%"/>
+				<placement x="%indent%" y="%row18_y%"/>
 				<text>{@reload_theme_btn=Reload Theme}</text>
 				<action function="reload"/>
 			</button>
@@ -3456,16 +3446,16 @@
 
 			<button style="main_button_half_height_s">
 				<placement x="%indent%" y="%row8_y%"/>
-				<text>{@mic_fix_btn=Reserved}</text>
+				<text>{@aromafm_btn=Aroma FM}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmmic</action>
-					<action function="set">tw_action=queuezip</action>
-					<action function="set">tw_has_action2=1</action>
-					<action function="set">tw_action2=flash</action>
-					<action function="set">tw_action2_param=tools_flash_zip</action>
-					<action function="set">tw_text1={@mic_fix_text=Disable second microphone.}</action>
-					<action function="set">tw_text4={@mic_fix_confirm=Try to install it?}</action>
+				        <action function="set">tw_filename=/sbin/aromafm</action>
+                                        <action function="set">tw_action=queuezip</action>
+                                        <action function="set">tw_has_action2=1</action>
+                                        <action function="set">tw_action2=flash</action>
+                                        <action function="set">tw_action2_param=tools_flash_zip</action>	
+					<action function="set">tw_text1={@aromafm_launch=Aroma File Manager will be launching.}</action>
+					<action function="set">tw_text4={@aromafm_confirm=Try to launch it?}</action>
 					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
 					<action function="page">tools_confirm_action</action>
 				</actions>
@@ -3474,18 +3464,6 @@
 			<button style="main_button_half_height_s">
 				<placement x="%center_x%" y="%row8_y%"/>
 				<text>{@mtp_fix_btn=Reserved}</text>
-				<actions>
-					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/addmtp</action>
-					<action function="set">tw_action=queuezip</action>
-					<action function="set">tw_has_action2=1</action>
-					<action function="set">tw_action2=flash</action>
-					<action function="set">tw_action2_param=tools_flash_zip</action>
-					<action function="set">tw_text1={@mtp_fix_text=MTP Fix will be launching.}</action>
-					<action function="set">tw_text4={@mtp_fix_confirm=Try to install it?}</action>
-					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
-					<action function="page">tools_confirm_action</action>
-				</actions>
 			</button>
 			
 			<button style="main_button_half_height_s">
