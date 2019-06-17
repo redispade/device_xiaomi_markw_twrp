@@ -46,10 +46,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 
-#TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_CONFIG := markw_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/markw
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz
 
 ## Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 67108864
