@@ -680,9 +680,9 @@
 		<string name="app_delete_btn">App Delete</string>
 		<string name="app_delete_text">App Delete will be launching.</string>
 		<string name="app_delete_confirm">Try to install it?</string>
-		<string name="mic_fix_btn">Fix Mic</string>
-		<string name="mic_fix_text">Disable second microphone.</string>
-		<string name="mic_fix_confirm">Try to install it?</string>
+		<string name="aromafm_btn">Aroma FM</string>
+		<string name="aromafm_launch">Launch Aroma File Manager.</string>
+		<string name="aromafm_confirm">Try to install it?</string>
 		<string name="dm_verity_btn">Dm-Verity</string>
 		<string name="dm_verity_text1">Remove dm-verity protection from the kernel.</string>
 		<string name="dm_verity_text2">If you do not disable dm-verity,</string>
