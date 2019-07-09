@@ -8,7 +8,7 @@
 #/cust_image     emmc      /dev/block/mmcblk0p48          flags=display="Cust (Image)";backup=0;flashimg
 /vendor         ext4      /dev/block/mmcblk0p48          flags=display="Vendor";backup=1;wipeingui
 /vendor_image   emmc      /dev/block/mmcblk0p48          flags=display="Vendor (Image)";backup=0;flashimg
-/sdcard         ext4      /data/media/0                  flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
+/storage        ext4      /data/media/0                  flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
 /recovery       emmc      /dev/block/mmcblk0p22          flags=display="Recovery";backup=1
 /modem_image    emmc      /dev/block/mmcblk0p1           flags=backup=1;display="Modem (Image)";flashimg
 /persist        ext4      /dev/block/mmcblk0p26          flags=display="Persist";backup=1
