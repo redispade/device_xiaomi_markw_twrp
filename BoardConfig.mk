@@ -94,6 +94,11 @@ TW_DEVICE_VERSION := 5-markw
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := false
 TARGET_COPY_OUT_VENDOR := vendor
 
+# exclude Twrp app
+TW_EXCLUDE_TWRPAPP := true
+
+#For reverse navbar (default "0")
+TW_SPECIFIC_SAMSUNG_NAVBAR := "1"
 
 ## Experimentation
 #TW_HAS_DOWNLOAD_MODE = true
