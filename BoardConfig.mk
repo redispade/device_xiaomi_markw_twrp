@@ -100,6 +100,9 @@ TW_EXCLUDE_TWRPAPP := true
 #For reverse navbar (default "0")
 TW_SPECIFIC_SAMSUNG_NAVBAR := "1"
 
+#adbd insecure
+BOARD_ALWAYS_INSECURE := true
+
 ## Experimentation
 #TW_HAS_DOWNLOAD_MODE = true
 #TW_HAS_EDL_MODE = true
