@@ -105,5 +105,5 @@ BOARD_ALWAYS_INSECURE := true
 
 ## Experimentation
 #TW_HAS_DOWNLOAD_MODE = true
-#TW_HAS_EDL_MODE = true
+TW_HAS_EDL_MODE = true
 
