@@ -87,7 +87,7 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
-TW_DEVICE_VERSION := 3-markw
+TW_DEVICE_VERSION := 6-markw
 
 ## Treble
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := false
@@ -99,5 +99,5 @@ BOARD_ALWAYS_INSECURE := true
 
 ## Experimentation
 #TW_HAS_DOWNLOAD_MODE = true
-#TW_HAS_EDL_MODE = true
+TW_HAS_EDL_MODE = true
 
