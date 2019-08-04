@@ -46,8 +46,10 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 androidboot.selinux=permissive buildvariant=eng
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_CONFIG := markw_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/markw
+#TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz
 
 ## Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 67108864
@@ -84,7 +86,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/soc/7000000.ssusb/7000000.dwc3/
 TW_INCLUDE_NTFS_3G := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-
+#TW_USE_TOOLBOX := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
 TW_DEVICE_VERSION := 6-markw
@@ -93,6 +95,11 @@ TW_DEVICE_VERSION := 6-markw
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := false
 TARGET_COPY_OUT_VENDOR := vendor
 
+# exclude Twrp app
+TW_EXCLUDE_TWRPAPP := true
+
+#For reverse navbar (default "0")
+TW_SPECIFIC_SAMSUNG_NAVBAR := "1"
 
 #adbd insecure
 BOARD_ALWAYS_INSECURE := true
