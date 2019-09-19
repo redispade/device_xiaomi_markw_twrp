@@ -69,6 +69,11 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
+
+#System as root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_ROOT_EXTRA_SYMLINKS := /system_root/system:/system
+
 ## TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_INCLUDE_CRYPTO := true
@@ -109,8 +114,7 @@ BOARD_ALWAYS_INSECURE := true
 #TW_HAS_DOWNLOAD_MODE = true
 TW_HAS_EDL_MODE = true
 
-TW_DEVICE_VERSION := 9-markw
+TW_DEVICE_VERSION := 9-SAR-markw
 
 # supress error messages while building
 ALLOW_MISSING_DEPENDENCIES := true
-
