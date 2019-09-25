@@ -1,0 +1,8 @@
+sys.usb.controller=7000000.dwc3
+sys.usb.rndis.func.name=rndis_bam
+sys.usb.rmnet.func.name=rmnet_bam
+persist.sys.isUsbOtgEnabled=true
+ro.product.brand=xiaomi
+ro.product.name=markw
+ro.product.device=markw
+ro.build.product=markw
