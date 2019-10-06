@@ -3381,7 +3381,7 @@
 				<text>{@supersu_btn=SuperSU}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/addsu</action>
+					<action function="set">tw_filename=/sbin/addsu.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3398,7 +3398,7 @@
 				<text>{@unroot_supersu_btn=Unroot SuperSU}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmsu</action>
+					<action function="set">tw_filename=/sbin/rmsu.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3415,7 +3415,7 @@
 				<text>{@magisk_btn=Magisk}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/addmag</action>
+					<action function="set">tw_filename=/sbin/addmag.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3432,7 +3432,7 @@
 				<text>{@unroot_magisk_btn=Unroot Magisk}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmmag</action>
+					<action function="set">tw_filename=/sbin/rmmag.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3449,7 +3449,7 @@
 				<text>{@aromafm_btn=Aroma FM}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-				        <action function="set">tw_filename=/sbin/aromafm</action>
+				        <action function="set">tw_filename=/sbin/aromafm.zip</action>
                                         <action function="set">tw_action=queuezip</action>
                                         <action function="set">tw_has_action2=1</action>
                                         <action function="set">tw_action2=flash</action>
@@ -3471,7 +3471,7 @@
 				<text>{@fp_scanner_btn=FP Scanner}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmfps</action>
+					<action function="set">tw_filename=/sbin/rmfps.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3488,7 +3488,7 @@
 			<text>{@pass_remover_btn=Pin/Pass Remover}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmpass</action>
+					<action function="set">tw_filename=/sbin/rmpass.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3505,7 +3505,7 @@
 				<text>{@rm_subs_overlays_btn=RM Subs Overlays}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmoverlays</action>
+					<action function="set">tw_filename=/sbin/rmoverlays.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3522,7 +3522,7 @@
 				<text>{@rm_all_subs_overlays_btn=RM All Subs Overlays}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmalloverlays</action>
+					<action function="set">tw_filename=/sbin/rmalloverlays.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3539,7 +3539,7 @@
 				<text>{@camera2api_enabler_btn=Camera2API Enabler}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/addhal3</action>
+					<action function="set">tw_filename=/sbin/addhal3.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3556,7 +3556,7 @@
 				<text>{@app_delete_btn=App Delete}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmapp</action>
+					<action function="set">tw_filename=/sbin/rmapp.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3573,7 +3573,7 @@
 				<text>{@dm_verity_btn=Dm Verity}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmverity_fec</action>
+					<action function="set">tw_filename=/sbin/rmverity_fec.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
@@ -3592,7 +3592,7 @@
 				<text>{@bat_btn=Battery Stats}</text>
 				<actions>
 					<action function="set">tw_back=tools</action>
-					<action function="set">tw_filename=/sbin/rmbat</action>
+					<action function="set">tw_filename=/sbin/rmbat.zip</action>
 					<action function="set">tw_action=queuezip</action>
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=flash</action>
