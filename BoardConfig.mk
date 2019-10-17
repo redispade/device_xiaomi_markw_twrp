@@ -88,6 +88,10 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 #TW_USE_TOOLBOX := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
+#enable Logcat in twrp
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
+
 ## Treble
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := false
 TARGET_COPY_OUT_VENDOR := vendor
