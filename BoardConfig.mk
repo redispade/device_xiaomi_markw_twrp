@@ -111,3 +111,6 @@ TW_HAS_EDL_MODE = true
 
 TW_DEVICE_VERSION := 9-markw
 
+# supress error messages while building
+ALLOW_MISSING_DEPENDENCIES := true
+
