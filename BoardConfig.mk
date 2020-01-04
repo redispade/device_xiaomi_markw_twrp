@@ -115,7 +115,7 @@ BOARD_ALWAYS_INSECURE := true
 #TW_HAS_DOWNLOAD_MODE = true
 TW_HAS_EDL_MODE = true
 
-TW_DEVICE_VERSION := 9-SAR-markw
+TW_DEVICE_VERSION := 10-SAR-markw
 
 # supress error messages while building
 ALLOW_MISSING_DEPENDENCIES := true
