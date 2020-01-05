@@ -3,7 +3,7 @@
 /boot           emmc      /dev/block/mmcblk0p21          flags=display="Boot"
 /system         ext4      /dev/block/mmcblk0p24          
 /system_image   emmc      /dev/block/mmcblk0p24          
-/data           ext4      /dev/block/mmcblk0p49          flags=length=-16384
+/data           ext4      /dev/block/mmcblk0p49          flags=encryptable=footer
 #/cust           ext4      /dev/block/mmcblk0p48          flags=display="Cust";backup=1;wipeingui
 #/cust_image     emmc      /dev/block/mmcblk0p48          flags=display="Cust (Image)";backup=0;flashimg
 /vendor         ext4      /dev/block/mmcblk0p48          flags=display="Vendor";backup=1;wipeingui
