@@ -30,6 +30,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_COPY_FILES += \
     system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
+#Fix HW FDE when building with Pie
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=msm8953
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
