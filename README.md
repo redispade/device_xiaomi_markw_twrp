@@ -1,5 +1,7 @@
 # treble twrp device tree for xiaomi redmi 4 prime (markw)
 
+Kernel source: https://github.com/redispade/perf_markw_twrp
+
 Compilation instructions
 
 First configure repo, git and java. Second checkout minimal twrp with omnirom tree:
