@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <project path="device/xiaomi/markw" name="redispade/android_device_xiaomi_markw-twrp" remote="github" revision="master" />
-  <project path="kernel/xiaomi/markw" name="redispade/android_kernel_xiaomi_msm8953" remote="github" revision="ol-upv4" />
-</manifest>
-
