@@ -1,7 +1,7 @@
 # mount_point   fstype    device                         flags
 /cache          ext4      /dev/block/mmcblk0p25          flags=display="Cache";backup=0;wipeingui
 /boot           emmc      /dev/block/mmcblk0p21          flags=display="Boot"
-/system         ext4      /dev/block/mmcblk0p24          
+/system_root    ext4      /dev/block/mmcblk0p24          
 /system_image   emmc      /dev/block/mmcblk0p24          
 /data           ext4      /dev/block/mmcblk0p49          flags=encryptable=footer
 #/cust           ext4      /dev/block/mmcblk0p48          flags=display="Cust";backup=1;wipeingui
