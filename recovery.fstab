@@ -19,6 +19,6 @@
 /fsg            emmc      /dev/block/mmcblk0p16          flags=backup=1;subpartitionof=/efs1
 /fsc            emmc      /dev/block/mmcblk0p2           flags=backup=1;subpartitionof=/efs1
 /firmware       vfat      /dev/block/mmcblk0p1           flags=display="Firmware";mounttodecrypt;fsflags=ro
-/external_sd    auto      /dev/block/mmcblk1p1           flags=fsflags=utf8;display="MicroSD";storage;wipeingui;removable
+/sdcard1        auto      /dev/block/mmcblk1p1           flags=fsflags=utf8;display="MicroSD";storage;wipeingui;removable
 /usb-otg        auto      /dev/block/sda1                flags=fsflags=utf8;display="USB Storage";storage;wipeingui;removable
 
