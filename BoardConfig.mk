@@ -71,7 +71,6 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 #System as root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
-BOARD_ROOT_EXTRA_SYMLINKS := /system_root/system:/system
 
 ## TWRP Configuration
 TW_THEME := portrait_hdpi
@@ -113,7 +112,7 @@ BOARD_ALWAYS_INSECURE := true
 #TW_HAS_DOWNLOAD_MODE = true
 #TW_HAS_EDL_MODE = true
 
-TW_DEVICE_VERSION := 14-markw
+TW_DEVICE_VERSION := 15-markw
 
 # supress error messages while building
 ALLOW_MISSING_DEPENDENCIES := true
