@@ -91,6 +91,8 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 #TW_USE_TOOLBOX := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
+TW_SKIP_COMPATIBILITY_CHECK := true
+
 #enable Logcat in twrp
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
@@ -112,7 +114,13 @@ BOARD_ALWAYS_INSECURE := true
 #TW_HAS_DOWNLOAD_MODE = true
 #TW_HAS_EDL_MODE = true
 
-TW_DEVICE_VERSION := 15-markw
+TW_DEVICE_VERSION := 16-markw
 
 # supress error messages while building
 ALLOW_MISSING_DEPENDENCIES := true
+
+#Build resetprop from source
+TW_INCLUDE_RESETPROP := true
+
+#Copy some props from installed system
+TW_OVERRIDE_SYSTEM_PROPS := "ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.sdk;ro.build.version.security_patch;ro.build.version.release"
