@@ -34,6 +34,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 PRODUCT_COPY_FILES += \
     system/timezone/output_data/iana/tzdata:recovery/root/system_root/system/usr/share/zoneinfo/tzdata
 
+# Copy Logo
+PRODUCT_COPY_FILES += device/xiaomi/markw/splashlogo.png:recovery/root/twres/images/splashlogo.png
+
 #Fix HW FDE when building with Pie
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=msm8953
