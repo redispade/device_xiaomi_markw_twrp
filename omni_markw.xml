@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <project path="device/xiaomi/markw" name="redispade/android_device_xiaomi_markw-twrp" remote="github" revision="master" />
-  <project path="vendor/xiaomi" name="SonicBSV/android_vendor_xiaomi_markw" remote="github" revision="Pie" />
-  <project name="TeamWin/android_external_busybox" path="external/busybox" remote="github" revision="android-9.0" />
-</manifest>
-

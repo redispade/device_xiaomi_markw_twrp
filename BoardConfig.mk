@@ -24,7 +24,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
@@ -39,17 +39,16 @@ TARGET_NO_BOOTLOADER := true
 
 ## Crypto
 TARGET_HW_DISK_ENCRYPTION := true
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 
 ## Kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 androidboot.selinux=permissive buildvariant=eng
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_CONFIG := markw_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/markw
-#TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz
+#TARGET_KERNEL_CONFIG := markw_defconfig
+#TARGET_KERNEL_SOURCE := kernel/xiaomi/markw
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
 
 ## Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 67108864
@@ -65,10 +64,13 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 ## Recovery
 #BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_HAS_LARGE_FILESYSTEM := true
+#BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
+#System as root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 ## TWRP Configuration
 TW_THEME := portrait_hdpi
@@ -86,10 +88,14 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/soc/7000000.ssusb/7000000.dwc3/
 TW_INCLUDE_NTFS_3G := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-#TW_USE_TOOLBOX := true
+TW_USE_TOOLBOX := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
-TW_DEVICE_VERSION := 6-markw
+TW_SKIP_COMPATIBILITY_CHECK := true
+
+#enable Logcat in twrp
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
 
 ## Treble
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := false
@@ -106,5 +112,15 @@ BOARD_ALWAYS_INSECURE := true
 
 ## Experimentation
 #TW_HAS_DOWNLOAD_MODE = true
-TW_HAS_EDL_MODE = true
+#TW_HAS_EDL_MODE = true
 
+TW_DEVICE_VERSION := 1-markw
+
+# supress error messages while building
+ALLOW_MISSING_DEPENDENCIES := true
+
+#Build resetprop from source
+TW_INCLUDE_RESETPROP := true
+
+#Copy some props from installed system
+TW_OVERRIDE_SYSTEM_PROPS := "ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.sdk;ro.build.version.security_patch;ro.build.version.release"
