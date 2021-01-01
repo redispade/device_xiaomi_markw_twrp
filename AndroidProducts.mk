@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/omni_markw.mk
+
+
+COMMON_LUNCH_CHOICES := \
+    omni_markw-userdebug \
+    omni_markw-eng
